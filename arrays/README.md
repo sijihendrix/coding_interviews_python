@@ -11,3 +11,5 @@ c_list = ["a", "b", "c" ]
 ### Problem 4: Iterate over each d_list and print it using the for i in range(x) syntax
 
 ### Problem 5: Find the sum of e_list, which contains [32, 55, 712, 1]
+
+### Actual list problem from coding interview: Given an array of integers: write a function that searches the arrray for the second largest element in the array
