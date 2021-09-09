@@ -1,7 +1,7 @@
 arr = [-1, -2, -4, 5, 4,5]
 
 
-# Todo: Fix funtion to account for negative values
+#ToDo: Account for situation where there are two elements with the largest value
 
 def second_largest(array):
     if not array:
@@ -58,3 +58,15 @@ def second_largest_geeks(list1):
 
 
 print(second_largest_geeks(arr))
+
+
+def second_largest_ON(array):
+
+    array.sort()
+
+    return array[-2]
+
+
+print(second_largest_ON(arr))
+
+ 
