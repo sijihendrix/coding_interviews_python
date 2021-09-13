@@ -1,24 +1,17 @@
-chessboard =  [[1,0],[0,1]]
+chessboard =  [[0,1,0,0],[0,0,1,0],[0,0,0,0],[0,0,0,1] ]
 
 
 
 def rooks_are_safe(array):
 
-    diagonal_sum = 0
-
-
     for i in range(len(array)):
-        # diagonal_sum += array[i][i]
-
-        print(diagonal_sum)
         if  sum(array[i]) > 1:
-            return False
-        # elif diagonal_sum > 1:
-        #     print(False)
-        #     return False       
-        for j in range(len(array[i])):
-            pass
+            return False    
+        for j in range(len(array[i])):  
+            res = [sub[j] for sub in array]
+            if  sum(res) > 1:
+                return False
+        
+    return True
 
-
-
-rooks_are_safe(chessboard)
+print(rooks_are_safe(chessboard))
