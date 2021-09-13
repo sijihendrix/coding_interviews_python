@@ -61,7 +61,7 @@ print(second_largest_geeks(arr))
 
 
 def second_largest_ON(array):
-
+ 
     array.sort()
 
     return array[-2]

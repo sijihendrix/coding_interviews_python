@@ -10,4 +10,4 @@ def larger_than(str1, str2):
 
 
 
-print(larger_than("24","25"))
+print(larger_than("241","0"))
