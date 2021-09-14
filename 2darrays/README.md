@@ -8,4 +8,12 @@
 
 ### Problem 5: You're given a 2D array with the same number of rows and columns. Write a function that add's up the diagonal elements and returns the sum
 
-### interview problem with 2darray: Given a configuration of a chess board with some rooks. We want to see which rooks can attack another rook. The configution of the board will be given as an input to the function and it is represented as a 2d array
+### interview problem with 2d-array: Given a configuration of a chess board with some rooks. We want to see which rooks can attack another rook. The configution of the board will be given as an input to the function and it is represented as a 2d array. 0 means there is nothing in the space and 1 means there is a rook in that position. The board could have a different size than a real chess baord. e.g: 4 X 4. Return true if none of the rooks can attack eachother
+
+Clarifying questions:
+What is the size of the chessboard?
+ans: could be any size with the same number or rows and columns
+Is it always square shaped?
+
+Could the given array be empty?
+NO
