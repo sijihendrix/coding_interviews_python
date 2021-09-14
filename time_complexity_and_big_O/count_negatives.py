@@ -15,4 +15,15 @@ print(count_negatives(sample_arr))
 
 # the above should be my O(n**2)
 
+def count_negatives_On(array):
+    count =  0
+    row_i = 0
+    col_i = len(array[0]) -1
+    while col_i >= 0 and row_i < len(array):
+        if array[row_i][col_i] < 0:
+            count += (col_i + 1)
+            row_i += 1
+        else:
+            col_i -= 1
+    return count
 
