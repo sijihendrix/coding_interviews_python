@@ -18,12 +18,12 @@ print(count_negatives(sample_arr))
 def count_negatives_On(array):
     count =  0
     row_i = 0
-    col_i = len(array[0]) -1
+    col_i = len(array[0]) -1 # we start searching from the last element in the array
     while col_i >= 0 and row_i < len(array):
         if array[row_i][col_i] < 0:
-            count += (col_i + 1)
-            row_i += 1
+            count += (col_i + 1) # add the position to count, obviously
+            row_i += 1 # we increment row to go to the next row and search cause we do not need to search in this row cause we have seen the value less than 0
         else:
-            col_i -= 1
+            col_i -= 1 # we decrement columns because that column doesn't contain any values less than 0
     return count
 
